@@ -28,10 +28,11 @@ body {
 
 .main {
   height: 100%;
+  align-content: center;
 
   &-title {
     width: 40%;
-    margin: 10vh auto 0;
+    margin: -10% auto 0;
     display: block;
   }
 }
@@ -40,7 +41,7 @@ body {
   &-start {
     width: fit-content;
     padding: 16px 32px;
-    margin: -4vh auto 0;
+    margin: -3vh auto 0;
 
     font-size: 3vw;
     line-height: 1;
@@ -61,8 +62,10 @@ body {
 }
 
 .draft-result {
-  margin-top: -4vh;
+  padding: 16px 0;
+  margin-top: -3vh;
   font-size: 3vw;
+  line-height: 1;
 
   justify-content: center;
   align-items: center;
