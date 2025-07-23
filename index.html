@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Win Together 順序抽籤</title>
+  <link rel="stylesheet" href="./css/index.min.css">
+</head>
+
+<body>
+  <div id="app" class="app">
+    <picture>
+      <source srcset="./img/bg@2x.webp" media="(min-resolution: 2dppx)" type="image/webp">
+      <source srcset="./img/bg@2x.png" media="(min-resolution: 2dppx)" type="image/png">
+      <source srcset="./img/bg.webp" type="image/erbp">
+      <img class="bg" src="./img/bg.png" alt="Title">
+    </picture>
+
+    <section class="main">
+      <picture>
+        <source srcset="./img/win_together@2x.png" media="(min-resolution: 2dppx)" type="image/png">
+        <img class="main-title" src="./img/win_together.png" alt="Title">
+      </picture>
+
+      <button id="btn-start" class="btn-start">選人順序</button>
+
+      <!-- 選秀結果 -->
+      <div id="draft-result" class="draft-result">
+        <span id="player-1" class="player">Hank</span>
+        <span> → </span>
+        <span id="player-2" class="player">Alfred</span>
+        <span> → </span>
+        <span id="player-3" class="player">Hank</span>
+      </div>
+    </section>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

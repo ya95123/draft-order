@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 黑體-繁, Apple LiGothic Medium, PingFang, 微軟正黑體, Microsoft JhengHei, WenQuanYi Zen Hei, helvetica, Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 100svh;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.main {
+  height: 100%;
+
+  &-title {
+    width: 40%;
+    margin: 10vh auto 0;
+    display: block;
+  }
+}
+
+.btn {
+  &-start {
+    width: fit-content;
+    padding: 16px 32px;
+    margin: -4vh auto 0;
+
+    font-size: 3vw;
+    line-height: 1;
+    font-weight: bold;
+    border-radius: 32px;
+    border: none;
+    background: #8b2b19;
+    color: #efd4a4;
+    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.4));
+
+    display: block;
+    cursor: pointer;
+
+    &.none {
+      display: none;
+    }
+  }
+}
+
+.draft-result {
+  margin-top: -4vh;
+  font-size: 3vw;
+
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  span {
+    margin: 0 12px;
+    color: #000;
+    font-weight: bold;
+    display: block;
+  }
+
+  .player {
+    width: 10vw;
+    text-align: center;
+  }
+}
